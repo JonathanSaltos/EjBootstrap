@@ -131,9 +131,25 @@
         </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="row pt-4">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="                La UPNA ofrece la posibilidad de realizar estancias de carácter voluntario en organizaciones colaboradoras compatibles con la actividad desarrollada por el estudiantado en la universidad
+                ">
+                Prácticas extracurriculares
+            </button>
+        </div>
+    </div>
 
-
-
+    <script>
+        // Inicializa todos los tooltips en la página
+        document.addEventListener("DOMContentLoaded", function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
 
     <script>
         // Inicializa todos los popovers en la página
